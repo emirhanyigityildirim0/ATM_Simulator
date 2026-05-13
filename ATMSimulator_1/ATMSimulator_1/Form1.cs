@@ -48,7 +48,7 @@ namespace ATMSimulator_1
             textBox1.Enter += (s, e) => currentInputBox = textBox1;
             textBoxUsername.Enter += (s, e) => currentInputBox = textBoxUsername;
             textBoxPassword.Enter += (s, e) => currentInputBox = textBoxPassword;
-            string connectionString = @"Server=LAPTOP-TB3FRK0R\SQLEXPRESS; Database=CultureBankDB; Integrated Security=True; TrustServerCertificate=True;";
+            string connectionString = @"Server=.; Database=CultureBankDB; Integrated Security=True; TrustServerCertificate=True;";
             conn = new SqlConnection(connectionString);
 
             try
