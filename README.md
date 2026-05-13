@@ -46,10 +46,10 @@ To run this application locally, you need to set up the database first.
 
 &#x20;  ```bash
 
-* &#x20;  git clone \[https://github.com/emirhanyigityildirim0/ATM\_Simulator.git](https://github.com/emirhanyigityildirim0/ATM\_Simulator.git)
+* git clone \[https://github.com/emirhanyigityildirim0/ATM\_Simulator.git](https://github.com/emirhanyigityildirim0/ATM\_Simulator.git)
+  
 *Original Repository (Upstream):*
-   ```bash
-*&#x20;   git clone [https://github.com/Anes-Zerrougui/ATM_Simulator.git](https://github.com/Anes-Zerrougui/ATM_Simulator.git)
+* git clone [https://github.com/Anes-Zerrougui/ATM_Simulator.git](https://github.com/Anes-Zerrougui/ATM_Simulator.git)
 
 
 ##### 2.\*\*Database Setup:\*\*
