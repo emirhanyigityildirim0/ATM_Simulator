@@ -68,7 +68,7 @@ namespace ATMSimulator_1
 
         private void AllowBackspace(object sender, KeyEventArgs e)
         {
-            if(e.KeyCode == Keys.Back && currentInputBox != null && currentInputBox.Text.Length > 0)
+            if (e.KeyCode == Keys.Back && currentInputBox != null && currentInputBox.Text.Length > 0)
             {
                 currentInputBox.Text = currentInputBox.Text.Substring(0, currentInputBox.Text.Length - 1);
                 currentInputBox.SelectionStart = currentInputBox.Text.Length;
@@ -88,7 +88,7 @@ namespace ATMSimulator_1
 
             TextBox activeBox = currentInputBox;
 
-            if(activeBox != null)
+            if (activeBox != null)
             {
                 activeBox.Text += btn.Text;
 
@@ -676,7 +676,7 @@ namespace ATMSimulator_1
         private void ResetToInitialState()
         {
             currentAccount = "";
-            receiverAccount = "";         
+            receiverAccount = "";
             isWaitingForPassword = false;
             isWaitingToAddNewUser = false;
             isWaitingForReceiver = false;
@@ -724,7 +724,7 @@ namespace ATMSimulator_1
 
         private void buttonBackspace_Click(object sender, EventArgs e)
         {
-            if(currentInputBox != null && currentInputBox.Text.Length > 0)
+            if (currentInputBox != null && currentInputBox.Text.Length > 0)
             {
                 currentInputBox.Text = currentInputBox.Text.Substring(0, currentInputBox.Text.Length - 1);
                 currentInputBox.SelectionStart = currentInputBox.Text.Length;
@@ -739,7 +739,7 @@ namespace ATMSimulator_1
                                                     MessageBoxButtons.YesNo,
                                                     MessageBoxIcon.Question);
 
-            if(result == DialogResult.Yes)
+            if (result == DialogResult.Yes)
             {
                 ResetToInitialState();
             }
@@ -752,7 +752,7 @@ namespace ATMSimulator_1
         private void addAccount_Click(object sender, EventArgs e)
         {
             isWaitingToAddNewUser = true;
-            
+
             textBox1.Clear();
             addButton.Enabled = false;
             textBox1.Visible = false;
@@ -827,6 +827,31 @@ namespace ATMSimulator_1
         private void buttonHistory_Click(object sender, EventArgs e)
         {
             ShowHistory();
+        }
+
+        private void textBoxDeposit_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void CultureBank_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBoxReceiverAccount_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBoxTransferAmount_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void labelUsername_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
