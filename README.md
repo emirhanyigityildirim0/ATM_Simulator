@@ -21,12 +21,14 @@ A professional desktop banking application that simulates real-world ATM operati
 To run this application locally, follow these steps:
 To run this application locally, you need to set up the database first.
 
+
 1. **Clone the repository:**
-'''bash
+
 git clone [https://github.com/emirhanyigityildirim0/ATM_Simulator.git](https://github.com/emirhanyigityildirim0/ATM_Simulator.git)
 Original Repository (Upstream):
 git clone [https://github.com/Anes-Zerrougui/ATM_Simulator.git](https://github.com/Anes-Zerrougui/ATM_Simulator.git)
-'''bash
+
+
 2.**Database Setup:**
 
 Open Microsoft SQL Server Management Studio (SSMS).
@@ -35,10 +37,12 @@ Create a new blank database named CultureBankDB.
 Open the database_setup.sql script (located in the project folder) in SSMS.
 Click Execute to automatically create the Clients and History tables.
 
+
 3.**Run the Application:**
 Open ATM_Simulator.sln using Visual Studio.
-
 Press F5 to build and run the application.
+
+
 
 👥Contributors
 This project is a collaborative effort developed by:
