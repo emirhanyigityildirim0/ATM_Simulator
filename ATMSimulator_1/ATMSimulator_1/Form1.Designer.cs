@@ -238,7 +238,7 @@
             // 
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox1.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.textBox1.Location = new System.Drawing.Point(78, 330);
+            this.textBox1.Location = new System.Drawing.Point(78, 344);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(230, 30);
             this.textBox1.TabIndex = 14;
@@ -255,7 +255,7 @@
             // 
             // textBoxPassword
             // 
-            this.textBoxPassword.Location = new System.Drawing.Point(78, 333);
+            this.textBoxPassword.Location = new System.Drawing.Point(78, 326);
             this.textBoxPassword.Name = "textBoxPassword";
             this.textBoxPassword.PasswordChar = '*';
             this.textBoxPassword.Size = new System.Drawing.Size(230, 24);
@@ -266,7 +266,7 @@
             // 
             this.textBoxUsername.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBoxUsername.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.textBoxUsername.Location = new System.Drawing.Point(78, 330);
+            this.textBoxUsername.Location = new System.Drawing.Point(78, 270);
             this.textBoxUsername.Name = "textBoxUsername";
             this.textBoxUsername.Size = new System.Drawing.Size(230, 30);
             this.textBoxUsername.TabIndex = 17;
@@ -276,19 +276,20 @@
             // 
             this.labelUsername.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.labelUsername.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.labelUsername.Location = new System.Drawing.Point(78, 286);
+            this.labelUsername.Location = new System.Drawing.Point(78, 242);
             this.labelUsername.Name = "labelUsername";
             this.labelUsername.Size = new System.Drawing.Size(230, 25);
             this.labelUsername.TabIndex = 18;
             this.labelUsername.Text = "User number:";
             this.labelUsername.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.labelUsername.Visible = false;
+            this.labelUsername.Click += new System.EventHandler(this.labelUsername_Click);
             // 
             // labelPassword
             // 
             this.labelPassword.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.labelPassword.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.labelPassword.Location = new System.Drawing.Point(78, 286);
+            this.labelPassword.Location = new System.Drawing.Point(74, 303);
             this.labelPassword.Name = "labelPassword";
             this.labelPassword.Size = new System.Drawing.Size(230, 25);
             this.labelPassword.TabIndex = 19;
@@ -367,17 +368,18 @@
             // textBoxTransferAmount
             // 
             this.textBoxTransferAmount.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.textBoxTransferAmount.Location = new System.Drawing.Point(78, 330);
+            this.textBoxTransferAmount.Location = new System.Drawing.Point(78, 343);
             this.textBoxTransferAmount.Name = "textBoxTransferAmount";
             this.textBoxTransferAmount.Size = new System.Drawing.Size(230, 30);
             this.textBoxTransferAmount.TabIndex = 25;
             this.textBoxTransferAmount.Visible = false;
+            this.textBoxTransferAmount.TextChanged += new System.EventHandler(this.textBoxTransferAmount_TextChanged);
             // 
             // howMuchLabel
             // 
             this.howMuchLabel.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.howMuchLabel.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.howMuchLabel.Location = new System.Drawing.Point(78, 286);
+            this.howMuchLabel.Location = new System.Drawing.Point(74, 278);
             this.howMuchLabel.Name = "howMuchLabel";
             this.howMuchLabel.Size = new System.Drawing.Size(230, 25);
             this.howMuchLabel.TabIndex = 26;
@@ -389,17 +391,18 @@
             // 
             this.textBoxReceiverAccount.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBoxReceiverAccount.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.textBoxReceiverAccount.Location = new System.Drawing.Point(78, 330);
+            this.textBoxReceiverAccount.Location = new System.Drawing.Point(78, 344);
             this.textBoxReceiverAccount.Name = "textBoxReceiverAccount";
             this.textBoxReceiverAccount.Size = new System.Drawing.Size(230, 30);
             this.textBoxReceiverAccount.TabIndex = 27;
             this.textBoxReceiverAccount.Visible = false;
+            this.textBoxReceiverAccount.TextChanged += new System.EventHandler(this.textBoxReceiverAccount_TextChanged);
             // 
             // labelReceiverAccount
             // 
             this.labelReceiverAccount.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.labelReceiverAccount.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.labelReceiverAccount.Location = new System.Drawing.Point(78, 286);
+            this.labelReceiverAccount.Location = new System.Drawing.Point(74, 278);
             this.labelReceiverAccount.Name = "labelReceiverAccount";
             this.labelReceiverAccount.Size = new System.Drawing.Size(230, 25);
             this.labelReceiverAccount.TabIndex = 28;
@@ -411,7 +414,7 @@
             // 
             this.textBoxDeposit.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBoxDeposit.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.textBoxDeposit.Location = new System.Drawing.Point(78, 330);
+            this.textBoxDeposit.Location = new System.Drawing.Point(78, 344);
             this.textBoxDeposit.Name = "textBoxDeposit";
             this.textBoxDeposit.Size = new System.Drawing.Size(230, 30);
             this.textBoxDeposit.TabIndex = 29;
@@ -422,7 +425,7 @@
             // 
             this.labelDeposit.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.labelDeposit.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.labelDeposit.Location = new System.Drawing.Point(78, 286);
+            this.labelDeposit.Location = new System.Drawing.Point(74, 278);
             this.labelDeposit.Name = "labelDeposit";
             this.labelDeposit.Size = new System.Drawing.Size(230, 25);
             this.labelDeposit.TabIndex = 30;
@@ -445,7 +448,7 @@
             // 
             this.labelWithdraw.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.labelWithdraw.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.labelWithdraw.Location = new System.Drawing.Point(78, 286);
+            this.labelWithdraw.Location = new System.Drawing.Point(74, 278);
             this.labelWithdraw.Name = "labelWithdraw";
             this.labelWithdraw.Size = new System.Drawing.Size(230, 25);
             this.labelWithdraw.TabIndex = 32;
@@ -457,7 +460,7 @@
             // 
             this.textBoxWithdraw.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBoxWithdraw.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.textBoxWithdraw.Location = new System.Drawing.Point(78, 330);
+            this.textBoxWithdraw.Location = new System.Drawing.Point(78, 344);
             this.textBoxWithdraw.Name = "textBoxWithdraw";
             this.textBoxWithdraw.Size = new System.Drawing.Size(230, 30);
             this.textBoxWithdraw.TabIndex = 33;

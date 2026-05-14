@@ -838,5 +838,20 @@ namespace ATMSimulator_1
         {
 
         }
+
+        private void textBoxReceiverAccount_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBoxTransferAmount_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void labelUsername_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
