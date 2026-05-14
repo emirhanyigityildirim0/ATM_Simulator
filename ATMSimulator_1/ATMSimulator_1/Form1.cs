@@ -28,6 +28,7 @@ namespace ATMSimulator_1
 
         public CultureBank()
         {
+            
             InitializeComponent();
             textBox1.KeyPress += SuppressTyping;
             textBoxUsername.KeyPress += SuppressTyping;
@@ -36,7 +37,7 @@ namespace ATMSimulator_1
             textBoxReceiverAccount.KeyPress += SuppressTyping;
             textBoxDeposit.KeyPress += SuppressTyping;
             textBoxWithdraw.KeyPress += SuppressTyping;
-
+            
             textBox1.KeyDown += AllowBackspace;
             textBoxUsername.KeyDown += AllowBackspace;
             textBoxPassword.KeyDown += AllowBackspace;
@@ -48,7 +49,36 @@ namespace ATMSimulator_1
             textBox1.Enter += (s, e) => currentInputBox = textBox1;
             textBoxUsername.Enter += (s, e) => currentInputBox = textBoxUsername;
             textBoxPassword.Enter += (s, e) => currentInputBox = textBoxPassword;
-            string connectionString = @"Server=.; Database=CultureBankDB; Integrated Security=True; TrustServerCertificate=True;";
+            // Olası tüm SQL Server isimleri
+            string[] olasiSunucular = { ".", @".\SQLEXPRESS", @"(localdb)\MSSQLLocalDB", "localhost" };
+            string connectionString = "";
+
+            foreach (string sunucu in olasiSunucular)
+            {
+                try
+                {
+                    // Bağlantı cümlesini oluştur
+                    string testString = $@"Server={sunucu}; Database=CultureBankDB; Integrated Security=True; TrustServerCertificate=True;";
+
+                    conn = new SqlConnection(testString);
+                    conn.Open(); // Bağlanmayı test et
+                    conn.Close(); // Başarılıysa hemen geri kapat 
+
+                    // Eğer kod buraya kadar hata vermeden geldiyse, doğru sunucu
+                    connectionString = testString;
+                    break;
+                }
+                catch
+                {
+                    
+                }
+            }
+
+            //Eğer hiçbirini bulamazsa uyarı ver
+            if (string.IsNullOrEmpty(connectionString))
+            {
+                MessageBox.Show("❌ Connection failed.", "❌ Connection failed:", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
             conn = new SqlConnection(connectionString);
 
             try
