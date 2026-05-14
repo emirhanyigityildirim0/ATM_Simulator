@@ -1,35 +1,24 @@
 # 🏧 CultureBank - ATM Simulator
 
-A desktop banking application that simulates real-world ATM operations. Built with **C# Windows Forms** and **Microsoft SQL Server**, this project focuses on secure database connections, transaction logging, and object-oriented programming (OOP) principles.
+A professional desktop banking application that simulates real-world ATM operations. Built with **C# Windows Forms** and **Microsoft SQL Server**, this project focuses on secure database connections, transaction logging, and object-oriented programming (OOP) principles.
 
 ## 🚀 Key Features
-
 * **User Authentication:** Secure login mechanism via database validation.
-
 * **Account Management:** Users can register and create new bank accounts.
-
 * **Financial Operations:**
-
-* Cash Deposit (With specific limit constraints)
-
-* Cash Withdrawal (With insufficient funds control)
-
-* Peer-to-Peer Transfer (Sending funds to other registered users)
-
-* **Transaction Logging:** All financial movements are automatically recorded with timestamps (LogTime) using Relational Database (RDBMS) architecture.
+    * **Cash Deposit:** Real-time balance updates.
+    * **Cash Withdrawal:** Built-in insufficient funds control.
+    * **P2P Transfer:** Seamless fund transfers between registered users.
+* **Transaction Logging:** All movements are automatically recorded with timestamps (`LogTime`) using a relational database architecture.
 
 ## 🛠️ Tech Stack
-
 * **Language:** C#
-
 * **Framework:** .NET Framework / Windows Forms (WinForms)
-
 * **Database:** Microsoft SQL Server
-
-* **Data Access:** ADO.NET (Microsoft.Data.SqlClient)
+* **Data Access:** ADO.NET (`Microsoft.Data.SqlClient`)
 
 ## ⚙️ Installation & Setup (Kurulum)
-
+To run this application locally, follow these steps:
 To run this application locally, you need to set up the database first.
 
 1. **Clone the repository:**
@@ -41,18 +30,12 @@ git clone [https://github.com/Anes-Zerrougui/ATM_Simulator.git](https://github.c
 2.**Database Setup:**
 Open Microsoft SQL Server Management Studio (SSMS).
 
-<<<<<<< HEAD
+
 Connect to your local server (.).
 
 Create a new blank database named CultureBankDB.
 =======
 &#x20;
-
-* git clone [\[https://github.com/emirhanyigityildirim0/ATM\_Simulator.git](https://github.com/emirhanyigityildirim0/ATM\_Simulator.git)](https://github.com/emirhanyigityildirim0/ATM_Simulator.git)
-  
-*Original Repository (Upstream):*
-* git clone [[https://github.com/Anes-Zerrougui/ATM_Simulator.git](https://github.com/Anes-Zerrougui/ATM_Simulator.git)](https://github.com/Anes-Zerrougui/ATM_Simulator.git)
->>>>>>> d342f96e44ba242cc37243863b64e88718e27795
 
 Open the database_setup.sql script (located in the project folder) in SSMS.
 
